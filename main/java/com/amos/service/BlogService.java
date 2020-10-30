@@ -1,19 +1,15 @@
-package com.amos.dao;
+package com.amos.service;
 
 import com.amos.entity.Blog;
 import com.amos.queryvo.BlogQuery;
-import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 /**
  * @author Amos
- * @date 2020-10-29 22:00
+ * @date 2020-10-29 23:10
  */
-@Mapper
-@Repository
-public interface BlogDao {
+public interface BlogService {
 
     /**
      * 保存新增博客
@@ -26,5 +22,5 @@ public interface BlogDao {
      * 查询文章管理列表
      * @return
      */
-    List<BlogQuery> getAllBlogQuery();
+    List<BlogQuery> getAllBlog();
 }

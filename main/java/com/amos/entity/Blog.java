@@ -8,6 +8,8 @@ import java.util.List;
  * 避免兼容性，没有使用lombok插件
  * @author Amos
  * @date 2020-10-28 20:59
+ * 主键（id）、标题（title）、更新时间（updateTime）、是否推荐（recommend）
+ * 是否发布（published）、分类id（typeId）、分类（type）
  * Mybatis的多对一和一对多
  */
 public class Blog {
