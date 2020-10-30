@@ -7,7 +7,7 @@ import java.security.NoSuchAlgorithmException;
  * @author Amos
  * @date 2020-10-28 19:40
  */
-public class MD5Utils {
+public class MD5Util {
 
     /**
      * @Description: MD5加密

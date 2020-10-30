@@ -1,12 +1,14 @@
 package com.amos.entity;
 
-import java.sql.Date;
+
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
  * @author Amos
  * @date 2020-10-28 21:01
+ * id为-1为父评论
  */
 public class Comment {
     private Long id;

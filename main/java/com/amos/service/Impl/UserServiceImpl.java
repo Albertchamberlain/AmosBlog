@@ -3,7 +3,7 @@ package com.amos.service.Impl;
 import com.amos.dao.UserDao;
 import com.amos.entity.User;
 import com.amos.service.UserService;
-import com.amos.util.MD5Utils;
+import com.amos.util.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public User checkUser(String username, String password) {
-        User user  = userDao.findByUsernameAndPassword(username, MD5Utils.code(password));
+        User user  = userDao.findByUsernameAndPassword(username, MD5Util.code(password));
         return user;
     }
 

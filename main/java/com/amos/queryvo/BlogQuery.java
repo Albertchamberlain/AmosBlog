@@ -12,6 +12,7 @@ public class BlogQuery {
     private Long id;
     private String title;
     private Date updateTime;
+    private Date CreateTime;
     private Boolean recommend;
     private Boolean published;
     private Long typeId;
@@ -23,11 +24,20 @@ public class BlogQuery {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", updateTime=" + updateTime +
+                ", CreateTime=" + CreateTime +
                 ", recommend=" + recommend +
                 ", published=" + published +
                 ", typeId=" + typeId +
                 ", type=" + type +
                 '}';
+    }
+
+    public Date getCreateTime() {
+        return CreateTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        CreateTime = createTime;
     }
 
     public Long getId() {
